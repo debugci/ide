@@ -2,6 +2,4 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: echo hi >> $GITHUB_STEP_SUMMARY
-    - shell: bash
-      run: sleep 100s
+      run: echo "::warning::https://example.org" && sleep 1m
