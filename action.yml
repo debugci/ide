@@ -2,4 +2,6 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: echo "::warning::https://example.org" && sleep 1m
+      run: echo "::warning::https://example.org"
+    - shell: bash
+      run: sleep 1m
